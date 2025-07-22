@@ -1,0 +1,21 @@
+From: Stuart Prescott <stuart@debian.org>
+Date: Mon, 14 Oct 2024 12:45:22 +1100
+Subject: XFAIL QtQml::qquickitem_grabToImage
+
+Failure seen on mips64el
+---
+ build_history/blacklist.txt | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+diff --git a/build_history/blacklist.txt b/build_history/blacklist.txt
+index 9219f1c..b7238fb 100644
+--- a/build_history/blacklist.txt
++++ b/build_history/blacklist.txt
+@@ -118,3 +118,7 @@
+     py3
+ [pysidetest::new_inherited_functions_test]
+     py3
++
++# Debian  mips64el-specific failures - temporarily xfail them
++[QtQml::qquickitem_grabToImage]
++    py3

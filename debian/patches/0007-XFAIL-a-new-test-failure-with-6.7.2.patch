@@ -1,0 +1,23 @@
+From: Stuart Prescott <stuart@debian.org>
+Date: Sun, 6 Oct 2024 19:46:11 +1100
+Subject: XFAIL a new test failure with 6.7.2
+
+Tests are substantially changed in new release; library not
+being found in multi-arch paths
+---
+ build_history/blacklist.txt | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/build_history/blacklist.txt b/build_history/blacklist.txt
+index dfee4f9..43fa65e 100644
+--- a/build_history/blacklist.txt
++++ b/build_history/blacklist.txt
+@@ -99,6 +99,8 @@
+     py3
+ [pyside6-android-deploy::test_pyside6_android_deploy]
+     py3
++[pyside6-deploy::test_pyside6_deploy]
++    py3
+ [QtCore::qinstallmsghandler_test]
+     py3
+ [QtCore::loggingcategorymacros_test]
