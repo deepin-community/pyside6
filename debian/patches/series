@@ -1,0 +1,10 @@
+0001-test-with-current-interpreter.patch
+0002-disable-qtexampleicons.patch
+0003-Fix-missing-subparser-in-test-harness.patch
+0004-Add-failing-tests-to-blacklist.patch
+0005-Fix-numpy-header-detection.patch
+0006-Mark-arm64-test-failures-as-xfail-temporarily.patch
+0007-XFAIL-a-new-test-failure-with-6.7.2.patch
+0008-XFAIL-smart-smart_pointer.patch
+0009-XFAIL-QtQml-qquickitem_grabToImage.patch
+0010-Fix-python-module-paths-in-CMake.patch
